@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content='width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, user-scalable=no, shrink-to-fit=yes'>
-    <title>Unity WebGL Player | AR_Testing</title>
+    <title>Unity WebGL Player | AR_Image</title>
     <link rel="stylesheet" href="TemplateData/style.css">
     <style>
         html{
@@ -96,7 +96,7 @@
         });;
         
     </script>
-    <script src="Build/WebGLBuild.loader.js"></script>
+    <script src="Build/WebGLAR.loader.js"></script>
     <script>
             var container = document.querySelector("#unity-container");
             var canvas = document.querySelector("#unity-canvas");
@@ -108,12 +108,12 @@
                 
                 document.getElementById("startARDiv").style.display = "none";
                 createUnityInstance(document.querySelector("#unity-canvas"), {
-                    dataUrl: "Build/WebGLBuild.data",
-                    frameworkUrl: "Build/WebGLBuild.framework.js",
-                    codeUrl: "Build/WebGLBuild.wasm",
+                    dataUrl: "Build/WebGLAR.data",
+                    frameworkUrl: "Build/WebGLAR.framework.js",
+                    codeUrl: "Build/WebGLAR.wasm",
                     streamingAssetsUrl: "StreamingAssets",
                     companyName: "DefaultCompany",
-                    productName: "AR_Testing",
+                    productName: "AR_Image",
                     productVersion: "0.1",
                     //webglContextAttributes: { "preserveDrawingBuffer": true },
                     // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
