@@ -40,7 +40,6 @@
 		<imagetarget id='reel' src='targets/reel.png'></imagetarget>
 		<imagetarget id='rmn' src='targets/rmn.png'></imagetarget>
 		<imagetarget id='bear' src='targets/bear.png'></imagetarget>
-		<imagetarget id='modi' src='targets/photo_2024-04-21_17-56-59.jpg'></imagetarget>
 
     <video id="webcam-video" muted autoplay playsinline style="width:1px;position:absolute"></video>
     <div id="startARDiv" class="ctaDiv">
@@ -97,7 +96,7 @@
         });;
         
     </script>
-    <script src="Build/AR.loader.js"></script>
+    <script src="Build/AR_Build.loader.js"></script>
     <script>
             var container = document.querySelector("#unity-container");
             var canvas = document.querySelector("#unity-canvas");
@@ -109,9 +108,9 @@
                 
                 document.getElementById("startARDiv").style.display = "none";
                 createUnityInstance(document.querySelector("#unity-canvas"), {
-                    dataUrl: "Build/AR.data",
-                    frameworkUrl: "Build/AR.framework.js",
-                    codeUrl: "Build/AR.wasm",
+                    dataUrl: "Build/AR_Build.data",
+                    frameworkUrl: "Build/AR_Build.framework.js",
+                    codeUrl: "Build/AR_Build.wasm",
                     streamingAssetsUrl: "StreamingAssets",
                     companyName: "DefaultCompany",
                     productName: "AR_imageTracking",
